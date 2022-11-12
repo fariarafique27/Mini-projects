@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+  h3
+    {
+text-align: center;
+font-weight: bolder;
+font-family: 'Courier New', Courier, monospace;
+font-size: 30px;
+color: rgb(70, 27, 70);
+    }
+    #fname
+    {
+        font-family: 'Courier New', Courier, monospace;
+        padding: 1.5vh;
+    }    
+    #sname
+    {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 10px;
+        padding: 1.5vh;
+    } 
+    #lname
+    {
+        font-family: 'Courier New', Courier, monospace;
+        padding: 1.5vh;
+    } 
+    #btn
+    {
+padding: 2vh;
+margin:2vh ;
+background-color: rgb(207, 82, 36);
+color :aliceblue;
+border: none;
+font-size: 1rem;
+border-radius: 4px ;
+    } 
+    #output
+    {
+        display: hidden;
+    }
+#form
+{
+    background-color: grey;
+    padding: 3vh;
+    height: 55vh;
+margin: 020vh;
+
+}
+p{
+    padding:1vh;
+    color:black;
+ 
+    font-weight: bold;
+    font: 1.5em sans-serif;
+
+}
+    </style>
+</head>
+
+<body>
+    <form id ="form">
+        <h3>MINI PROJECT</h3>
+
+        <label for="first_name" id="a">Enter your first name:  </label>
+           <input type="text" id="fname" value="">
+    <br>
+
+        <label for="Middle_name" >Enter your middle  name : </label>
+         <input type="text" id="sname" value="">
+        <br>
+        <label for="Last_name" >Enter your Last name : </label>
+        <input type="text" id="lname" value="">
+<br>
+        <button id="btn" type="button" onclick="myFunction()">Click to display full name </button>
+  <br>
+  
+  <p id="demo">Output</p>
+
+
+</form>
+
+    
+     
+    
+        
+        
+        <script>
+        
+            function myFunction() {
+                var x = document.getElementById("fname").value;
+                var y = document.getElementById("sname").value;
+                var z = document.getElementById("lname").value;
+                document.getElementById("demo").innerHTML = x+' '+y+' '+z;
+            }
+        </script>
+
+  //  <script src="mini_project.js"></script>
+
+
+    
+</body>
+</html>
